@@ -1,0 +1,47 @@
+body{
+    background-color: aqua;
+}
+
+.nav{
+    position:fixed;
+    display: inline-block;
+    top:1cm;
+    right:2cm;
+    justify-content: space-between,space-around;
+}
+.nav a{
+    margin-left:1cm;
+    text-decoration: none;
+    color:black;
+}
+.logout{
+    border:2px solid red;
+    padding:10px;
+    border-radius:20px;
+    background-color: red;
+    transition: all 0.5s ease-in;
+}
+.logout:hover{
+    background-color:white;
+}
+.content{
+    position: absolute;
+    top:2cm;
+    left:14cm;
+}
+.content h1{
+    font-size: 50px;
+    text-decoration: underline;
+}
+.content p{
+    font-size:30px;
+}
+.content img{
+    width: 400px;
+    height: 400px;
+    border:8px solid rosybrown;
+    border-radius:20px;
+}
+.nav::after{
+    position: fixed;
+}

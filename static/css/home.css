@@ -1,0 +1,118 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 15cm;
+    background-image: url('../assists/back.avif'); /* Updated path to your header background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    color: white; /* Set text color to white for better visibility on background image */
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Other CSS rules... */
+
+.toolbar {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Align elements to the left and right edges */
+    align-items: center; /* Center vertically */
+}
+
+nav {
+    margin-left: auto; /* Push the navigation elements to the right */
+    position: absolute;
+    right:150px;
+    justify-content: space-around ,space-between;
+}
+
+/* Style for navigation links */
+nav a {
+    margin-left: 100px; /* Add spacing between navigation links */
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Set color for links */
+}
+.maintext h1{
+    position: absolute;
+    top:5cm;
+    left:40%;
+    text-transform: capitalize;
+    font-family: cursive;
+    font-size: 60px;
+    padding-bottom:1cm;
+    background-clip: text;
+    -webkit-background-clip: text; /* For Safari/Chrome */
+    color: transparent;
+    background-image: linear-gradient(to right, #ff6b6b, #556270);
+}
+.second{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:15cm;
+    background-image: url('../assists/refrence.jpg'); /* Path to your header background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; 
+    text-align: center;
+    padding: 50px 0;
+}
+.text{
+    position: absolute;
+    color:black;
+    display: block;
+    left:12cm;
+    right:2cm;
+    font-size:25px;
+    font-family: cursive;
+}
+.text p1{
+    display:block;
+}
+
+
+figure{
+    display: inline-block; /* Display figures inline */
+    margin: 0 50px; /* Add some margin between figures */
+    vertical-align: top; 
+    position: relative;
+    justify-content: space-between;
+    top:6cm;
+    left:7cm;
+
+}
+.second img{
+    width:150px;
+    height: 250px;
+    border:5px solid brown;
+    border-radius: 20px;
+}
+.process{
+    margin:0;
+    width:100%;
+    background-color:antiquewhite;
+    padding: 50px 0;
+}
+
+.process img{
+    position: relative;
+    left:6cm;
+
+}
+
+
+.logout{
+    border:2px solid red;
+    padding:10px;
+    border-radius:20px;
+    background-color: red;
+    transition: all 0.5s ease-in;
+}
+.logout:hover{
+    background-color:white;
+}

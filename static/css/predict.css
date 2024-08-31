@@ -1,0 +1,71 @@
+body{
+    margin:0;
+    padding:0;
+}
+header{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:15cm;
+    background-image: url('../assists/home.jpg'); /* Path to your header background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    color: white; /* Set text color to white for better visibility on background image */
+    text-align: center;
+    align-items: center;
+    padding: 50px 0;
+}
+h1{
+    color:black;
+}
+.toolbar {
+    top:2cm;
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Align elements to the left and right edges */
+    align-items: center; /* Center vertically */
+}
+
+nav {
+    margin-left: auto; /* Push the navigation elements to the right */
+    position: absolute;
+    top:2cm;
+    right:150px;
+    justify-content: space-around ,space-between;
+}
+
+/* Style for navigation links */
+nav a {
+    margin-left: 100px; /* Add spacing between navigation links */
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Set color for links */
+}
+header h1{
+    position:absolute;
+    top:7cm;
+    left:8cm;
+    align-items: center;
+    color:black;
+}
+header form{
+    position: absolute;
+    top:10cm;
+    left:9cm;
+}
+form label{
+    color:black;
+}
+
+form input{
+    width: 2cm;
+    margin-right:2cm;
+}
+.logout{
+    border:2px solid red;
+    padding:10px;
+    border-radius:20px;
+    background-color: red;
+    transition: all 0.5s ease-in;
+}
+.logout:hover{
+    background-color:white;
+}

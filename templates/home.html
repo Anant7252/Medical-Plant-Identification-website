@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <header>
+        <div class="toolbar">
+            <nav>
+                <a href="/home">Home</a>
+                <a href="/predict">Predict</a>
+                <a class="logout" href="/">Logout</a>
+            </nav>
+        </div>
+        <div class="maintext">
+            <h1>Medicinal Plant Identification </h1>
+        </div>
+    </header>
+    <div class="second">
+        <div class="text">
+            <p1>We offer identification for over 80 types of medicinal plants . Our comprehensive database ensures reliable and precise information for your herbal needs.</p1>
+            <p1>Below are some images of plants that our identification tool can accurately predict:</p1>
+        </div>
+        <div class="images">
+            <figure>
+                <img src="{{url_for('static',filename='plant/tulsi.jpg')}}" alt="Tulsi" />
+                <figcaption>Tulsi</figcaption>
+            </figure>            
+            <figure>
+                <img src="{{url_for('static',filename='plant/lemon.jpg')}}" alt="Tulsi" />
+                <figcaption>Lemon</figcaption>
+            </figure>            
+            <figure>
+                <img src="{{url_for('static',filename='plant/Betel.jpg')}}" alt="Tulsi" />
+                <figcaption>Betel</figcaption>
+            </figure>            
+        </div>
+
+    </div>
+    <div class="process">
+        <h1>Process Diagram</h1><hr>
+        <img src="{{url_for('static', filename='assists/diagram.png')}}" alt="not" />
+    </div>
+</body>
+</html>

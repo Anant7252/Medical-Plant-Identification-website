@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/predict.css') }}">
+</head>
+<body>
+    <div class="toolbar">
+        <nav>
+            <a href="/home">Home</a>
+            <a href="/predict">Predict</a>
+            <a class="logout" href="/">Logout</a>
+        </nav>
+    </div>
+    <header>
+        <div class="text">
+            <h1>For identification of Medicinal Plant uplode here</h1>
+        </div>
+       
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <label for="input_file">Click to select an image (png, jpg, jpeg, gif)</label>
+            <input type="file" id="input_file"name="file" accept="image/*" placeholder="uplode here">
+            <button type="submit">Upload</button>
+        </form>
+    </header>
+</body>
+</html>
+
